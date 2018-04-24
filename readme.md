@@ -1,22 +1,31 @@
-# Lumen PHP Framework
+# Basico API Lumen + GraphQL
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+## Configuration
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+Configuration options for the Lumen framework are stored in the .env file. 
 
-## Official Documentation
+## Serving Your Application
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+php -S 127.0.0.1:8000 -t .\public\
 
-## Security Vulnerabilities
+## RESTful
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+GET /api 
+GET /api/users 
+POST /api/users/store 
+GET /api/users/show/{user_id} 
+PUT /api/users/update/{user_id} 
+DELETE /api/users/delete/{user_id} 
+
+## Route GraphQL
+
+http://127.0.0.1:8000/graphiql
 
 ## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
-"# basic-graphql" 
+open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+## Packges
+
+https://github.com/laravel/lumen-framework
+https://github.com/Folkloreatelier/laravel-graphql
